@@ -1,0 +1,411 @@
+<!doctype html>
+<html>
+<head>
+	<!-- CSS Will go under Here in STYLE Tags -->
+	<style>
+        /* CSS Variables for Color */
+        :root {
+            --mainbg:white;
+            --lightbg: #b6aeae;
+            --headercolor: white;
+            --navcolor:#001d3d;
+            --lighttext: #ffffff;
+            --darktext: black;
+            --footercolor: #001d3d;
+        }
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+		header {
+			padding: 1vh;
+			text-align: center;
+		}
+		header h1 {
+			color: var(--darktext);
+			width: 60%;
+			margin: 1vh auto;
+			padding: 1vh;
+		}
+		nav {
+			background: var(--navcolor);
+			color: var(--lighttext);
+			padding: 2vh;
+		}
+		footer {
+			background: var(--navcolor);
+			color: var(--lighttext);
+			padding: 2vh;
+			min-height: 10vh;
+		}
+		.container {
+			background: var(--lighbg);
+			padding: 1vh;
+			min-height: 60vh;
+			width: 80%;
+			margin: auto;
+		}
+        /* New CSS Goes Under Here */
+        .jumbotron {
+          height: 50vh;
+          position: relative;
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .jumbotron img {
+          width: 100%;
+          display: block;
+          filter: brightness(.7) blur(3px);
+        }
+        .jumbotron-inner {
+          position: absolute;
+          text-align: center;
+          background: rgba(0,0,0,.4);
+          width: 60%;
+          height: 60%;
+          color: var(--lighttext);
+          border-radius: 16px;
+        }
+        .jumbotron-inner > * {
+          padding: 1vh;
+          margin: 1vh;
+        }
+        .jumbotron-inner h1 {
+          font-size: 3rem;
+        }
+        .jumbotron-inner p {
+          font-size: 1.5rem;
+          line-height:2.15rem;
+        }
+        /*container flex setup for rows*/
+        .container {
+          display: flex;
+          flex-flow: column nowrap;
+        }
+        .flex-container {
+          display: flex;
+          flex-flow: row wrap;
+          /*since these are items in the container*/
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+          background: #5c6c6e;
+        }
+        .section-header {
+          width: 100%;
+          padding: 2vh;
+          font-size: 2rem;
+          background: var(--lightbg);
+          color: var(--darktext);
+          border-bottom: 1px black solid;
+          margin: 1vh auto;
+        }
+        .flex-item {
+          flex-basis: 30%;
+          min-width:200px;
+          padding: 1vh;
+          margin: 1vh auto;
+          text-align: center;
+          
+        }
+        .flex-item a {
+          display: block;
+          text-decoration: none;
+          color: var(--darktext);
+          border-radius: 8px;
+          overflow: hidden;
+        }
+        .flex-item a hover {
+          box-shadow: 6px 8px 6px 3px rgba(0,0,0,0.32);
+        }
+        .item-image {
+          width: 100%;
+          height:32vh;
+          background: cyan;
+          overflow: hidden;
+          
+        }
+        .item-image img {
+          display: block;
+          height: 100%;
+          margin: auto;
+        }
+        .item-heading {
+          background: var(--navcolor);
+          color: var(--lighttext);
+          font-size: 1.5rem;
+          padding: 1vh;
+        }
+        .item-text {
+          width: 100%;
+          min-height:15vh;
+          background: var(--lightbg);
+          padding: 1.25vh;
+        }
+
+
+
+	</style>
+
+    <!-- Link tags go here for external css -->
+
+
+    <!-- Responsive meta tag for viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+	<title>Web 1 Final Index - LASTNAME</title>
+
+</head>
+<body>
+	<header>
+		
+	</header>
+	<nav>
+		Placeholder
+	</nav>
+    <div class="jumbotron">
+        <img src="https://t4.ftcdn.net/jpg/02/86/02/67/360_F_286026740_xWkobcEk5g38qrH7cpfeImAnlUUSIrc5.jpg" alt="#">
+        <div class="jumbotron-inner">
+            <h1>Web Design Homepage</h1>
+            <p>
+                Kadiga Taieba<br>
+                Web 1, 1st Hour<br>
+                Dec 9 2021
+            </p>
+        </div>
+    </div>
+	<div class="container">
+		<!-- Put assignment specific code here -->
+
+        <!-- Start of a page section-->
+        <h3 class="section-header">Page Skeletons</h3>
+        <div class="flex-container">
+
+            <div class="flex-item">
+                <a href="file:///home/chronos/u-c1b39d48cd4fe82e95a5c023a789f2d5dcec8628/MyFiles/Downloads/Web%20fall%202021%20Taieba/Skeleten.html" target="_blank">
+                <div class="item-image">
+                    <img src="https://boneclones.com/images/store-product/product-421-main-main-big-1614379920.jpg" alt="#">
+                </div>
+                <div class="item-heading">
+                    Skeleton v.1
+                </div>
+                <div class="item-text">
+                  We used this first skeleton to do other sites.
+                </div>
+                </a>
+            </div><!-- End Flex Item-->
+
+            <div class="flex-item">
+                <a href="file:///home/chronos/u-c1b39d48cd4fe82e95a5c023a789f2d5dcec8628/MyFiles/Downloads/Web%20fall%202021%20Taieba/newskeleten.html" target="_blank">
+                <div class="item-image">
+                    <img src="https://mobileimages.lowes.com/productimages/19c30a1c-be4f-4948-810b-db25b7745713/08921784.jpg?size=pdhi" alt="#">
+                </div>
+                <div class="item-heading">
+                    Skeleton v.2
+                </div>
+                <div class="item-text">
+                    We used this skeleton to make other sites.
+                </div>
+                </a>
+            </div><!-- End Flex Item-->
+
+            <div class="flex-item">
+                <a href="#" target="_blank">
+                <div class="item-image">
+                    <img src="https://www.realityworks.com/wp-content/uploads/2019/07/human_skeleton_tabletop-600x600.jpg" alt="#">
+                </div>
+                <div class="item-heading">
+                    Final Skeleton
+                </div>
+                <div class="item-text">
+                    This is the final skeleton.
+                </div>
+                </a>
+            </div><!-- End Flex Item-->
+
+            
+
+
+
+        </div><!-- End Flex Container -->
+
+        <!-- End of a page section -->
+
+        <!-- Start of a page section-->
+        <h3 class="section-header">Basic HTML/CSS Assignments</h3>
+        <div class="flex-container">
+
+            <div class="flex-item">
+                <a href="file:///home/chronos/u-c1b39d48cd4fe82e95a5c023a789f2d5dcec8628/MyFiles/Downloads/Web%20fall%202021%20Taieba/Favoritemoviehtml.html" target="_blank">
+                <div class="item-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9l1tidlACpZkTTB-BkjJIHcRs1au0fkHaZpO78s5pjxmYhc_O" alt="#">
+                </div>
+                <div class="item-heading">
+                    Favorite Movie v.2
+                </div>
+                <div class="item-text">
+                    This is about my favorite movie and i wrote the summary of the movie and who are the main characters in this movie.
+                </div>
+                </a>
+            </div><!-- End Flex Item-->
+
+            <div class="flex-item">
+                <a href="file:///home/chronos/u-c1b39d48cd4fe82e95a5c023a789f2d5dcec8628/MyFiles/Downloads/Web%20fall%202021%20Taieba/htmlfavoritefood.html" target="_blank">
+                <div class="item-image">
+                    <img src="https://www.mcgill.ca/oss/files/oss/styles/hd/public/eatables-3873462_1920.jpg?itok=u-zzZg1P&timestamp=1560998397" alt="#">
+                </div>
+                <div class="item-heading">
+                    HtML Favorite Food v.3
+                </div>
+                <div class="item-text">
+                    This is about my favorite food. I added videos of the foods i like and how to make them. And 3 reasons why i like them.
+                </div>
+                </a>
+            </div><!-- End Flex Item-->
+
+            <div class="flex-item">
+                <a href="file:///home/chronos/u-c1b39d48cd4fe82e95a5c023a789f2d5dcec8628/MyFiles/Downloads/Web%20fall%202021%20Taieba/streamingpage2.html" target="_blank">
+                <div class="item-image">
+                    <img src="https://cdn.vox-cdn.com/thumbor/6H6s5lnbO8QawZWDq9GKtHQZ3wA=/0x0:2040x1360/1200x675/filters:focal(857x517:1183x843)/cdn.vox-cdn.com/uploads/chorus_image/image/66952568/jbareham_200318_1006_movie_night_0001.0.jpg" alt="#">
+                </div>
+                <div class="item-heading">
+                    HTML Streaming Assignment
+                </div>
+                <div class="item-text">
+                    This is about my Top 6 streaming platforms and Top 5 shows on each platform.
+                </div>
+                </a>
+            </div><!-- End Flex Item-->
+
+            <div class="flex-item">
+                <a href="file:///home/chronos/u-c1b39d48cd4fe82e95a5c023a789f2d5dcec8628/MyFiles/Downloads/Web%20fall%202021%20Taieba/shoppinglist2.html" target="_blank">
+                <div class="item-image">
+                    <img src="https://garlicdelight.com/wp-content/uploads/20210319-reverse-shopping-list.png" alt="#">
+                </div>
+                <div class="item-heading">
+                    Updated Shopping List
+                </div>
+                <div class="item-text">
+                    This is about shopping list in 5 different categories,and 5 items for each categories.
+                </div>
+                </a>
+            </div><!-- End Flex Item-->
+
+            
+
+
+
+        </div><!-- End Flex Container -->
+
+        <!-- End of a page section -->
+
+        <!-- Start of a page section-->
+        <h3 class="section-header">CSS Flexbox</h3>
+        <div class="flex-container">
+
+            <div class="flex-item">
+                <a href="file:///home/chronos/u-c1b39d48cd4fe82e95a5c023a789f2d5dcec8628/MyFiles/Downloads/Web%20fall%202021%20Taieba/STREAMINGv3.html" target="_blank">
+                <div class="item-image">
+                    <img src="https://i.postimg.cc/rsrKmhmk/Screen-Shot-2020-09-30-at-3-11-12-PM.png" alt="#">
+                </div>
+                <div class="item-heading">
+                    Streaming v.3
+                </div>
+                <div class="item-text">
+                    This about apps to watch movies and shows and how it is benefial or spend good times with family and friends.
+                </div>
+                </a>
+            </div><!-- End Flex Item-->
+
+            <div class="flex-item">
+                <a href="file:///home/chronos/u-c1b39d48cd4fe82e95a5c023a789f2d5dcec8628/MyFiles/Downloads/Web%20fall%202021%20Taieba/flexnflteam.html" target="_blank">
+                <div class="item-image">
+                    <img src="https://www.profootballhof.com/assets/1/6/NFLSchedule1050Web.jpg" alt="#">
+                </div>
+                <div class="item-heading">
+                    Flexbox NFL/Sports Assignment
+                </div>
+                <div class="item-text">
+                    This is about 5NFL teams and 5players from each teams. And what position the player plays as well as what college they attended.
+                </div>
+                </a>
+            </div><!-- End Flex Item-->
+
+            <div class="flex-item">
+                <a href="file:///home/chronos/u-c1b39d48cd4fe82e95a5c023a789f2d5dcec8628/MyFiles/Downloads/Web%20fall%202021%20Taieba/flexfavoritemusic.html" target="_blank">
+                <div class="item-image">
+                    <img src="https://images.macrumors.com/t/LGuWSa3kB8rIGbhA7CJm-zusWmg=/1200x1200/smart/article-new/2018/05/apple-music-note.jpg" alt="#">
+                </div>
+                <div class="item-heading">
+                    Flexbox Music
+                </div>
+                <div class="item-text">
+                    This is about my favorite music and the rappers. And what they meant in the song lyrics.
+                </div>
+                </a>
+            </div><!-- End Flex Item-->
+
+            
+
+
+
+        </div><!-- End Flex Container -->
+
+        <!-- End of a page section -->
+
+        <!-- Start of a page section-->
+        <h3 class="section-header">Full Websites</h3>
+        <div class="flex-container">
+
+            <div class="flex-item">
+                <a href="file:///home/chronos/u-c1b39d48cd4fe82e95a5c023a789f2d5dcec8628/MyFiles/Downloads/Web%20fall%202021%20Taieba/First%20Website/index.html" target="_blank">
+                <div class="item-image">
+                    <img src="https://theartsdevelopmentcompany.org.uk/wp-content/uploads/2019/02/Website-Building-Landscape-1280x640.jpg" alt="#">
+                </div>
+                <div class="item-heading">
+                    First Full Website
+                </div>
+                <div class="item-text">
+                    This is about creating websites like gallery page and favorite site page.
+                </div>
+                </a>
+            </div><!-- End Flex Item-->
+
+
+            
+
+
+
+        </div><!-- End Flex Container -->
+
+        <!-- End of a page section -->
+
+
+
+
+
+
+	</div><!-- End of the container -->
+	<footer>
+		Made in FHS Web Design
+	</footer>
+
+
+    <!-- JavaScript will go under here-->
+
+
+
+
+
+
+
+    
+<!-- Don't delete me please, but copy me...-->
+</body>
+</html>
